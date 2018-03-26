@@ -1,8 +1,9 @@
-var express = require('express');
+let express = require('express');
 
-var init = 'Initialize'
+let app = express()
 
-if (true){
-  console.log('hi')
-}
-console.log(init)
+let port = 5000
+
+app.listen(port, function(err){
+  console.log('running server on port ' + port)
+});
