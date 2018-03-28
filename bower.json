@@ -1,0 +1,21 @@
+{
+  "name": "node",
+  "description": "getting started",
+  "main": "app.js",
+  "authors": [
+    "Ibrahim Mbaziira"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/code-sleuth/express",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "font-awesome": "~4.4.0"
+  }
+}
