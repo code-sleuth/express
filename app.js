@@ -1,13 +1,18 @@
 let express = require('express');
 
-let app = express()
+let app = express();
 
-let port = 5000
+let port = 5000;
 
-app.get('/', function(req, res){
-  res.send("Instantiated...")
+//use public folder to host static files
+app.use(express.static('public'));
+//host html files in views folder
+app.use(express.static('src/views'));
+
+app.get('/', (req, res) => {
+    res.send('Instantiated...');
 });
 
-app.listen(port, function(err){
-  console.log('running server on port ' + port)
+app.listen(port, function(err) {
+    console.log('running server on port ' + port);
 });
