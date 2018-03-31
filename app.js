@@ -2,7 +2,7 @@ let express = require('express');
 
 let app = express();
 
-let port = 5000;
+let port = process.env.PORT || 5000;
 
 //use public folder to host static files
 app.use(express.static('public'));
