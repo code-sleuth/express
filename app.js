@@ -8,10 +8,10 @@ let port = process.env.PORT || 5000;
 app.use(express.static('public'));
 //host html files in views folder
 app.set('views','./src/views');
-app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.send('Instantiated...');
+    res.render('index', {list: ['a','b']});
 });
 
 app.listen(port, function(err) {
